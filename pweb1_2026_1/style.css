@@ -1,0 +1,53 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:medium;
+    background-color: rgb(3, 3, 95);
+    text-align: center;
+}
+
+main {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.cssheader{
+    text-align: center; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(3, 3, 95);
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.nav{
+    display: flex;
+   color: rgb(3, 3, 95);
+   background-color: rgb(250, 227, 196); 
+   justify-content: center;
+   gap: 20px 
+
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.conteudo1{
+
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: antiquewhite;
+    text-align: left;
+}
+
+.centro{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: antiquewhite;    
+}
+
+.conteudo2{
+    text-align: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: antiquewhite;
+}
