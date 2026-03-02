@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Matrícula de Curso</title>
+</head>
+<body>
+ <form action="action_page.html">
+    <fieldset>
+        <legend>Formulário matrícula de curso<</legend>
+
+<label for=“pnome">Primeiro nome:</label><br>
+<input type="text" id="pnome" name="pnome"><br>
+<label for=“unome">Último nome:</label><br>
+<input type="text" id="unome" name="unome">
+
+
+<p>Curso:</p>
+
+<input type="radio" id=tecinformatica" name="selecao_curso" value="tecinformatica">
+<label for="tecinformatica">Técnico em Informática</label><br>
+<input type="radio" id="graddevsis" name="selecao_curso" value="graddevsis">
+<label for="graddevsis">Graduação - Análise e Desenvolvimento de Sistemas</label><br>
+<input type="radio" id="progweb" name="selecao_curso" value="progweb">
+<label for="progweb">Profissionalizante - Programação Web</label>
+
+
+<p>Linguagens de programação de sua preferência:</p>
+
+<input type="checkbox" id="lang1" name="lang1" value="php">
+<label for="lang1">PHP</label><br>
+<input type="checkbox" id="lang2" name="lang2" value="Java">
+<label for="lang2">Java</label><br>
+<input type="checkbox" id="lang3" name="lang3" value="Python">
+<label for="vehicle3">Python</label>
+
+<br>
+<label for="turno"><p>Escolha um turno:</p></label>
+<select name="turno" id="turno">
+<option value="manha">Manhã</option>
+<option value="tarde">Tarde</option>
+<option value="noite">Noite</option>
+</select>
+<br>
+
+<label for="browser"> <p>Escolha a unidade mais próxima de você:</p></label>
+<input list="browsers" name="browser" id="browser">
+<datalist id="browsers">
+<option value="Chapecó">
+<option value="São Carlos">
+<option value="São Lourenço do Oeste">
+<option value="Caçador">
+<option value="Florianópolis">
+<option value="Florianópolis">
+<option value="Palhoça">
+<option value="Lages">
+<option value="Xanxerê">
+<option value="São Miguel do Oeste">
+</datalist>
+</fieldset>
+
+<input type="submit" value="Enviar">
+ </form>
+</body>
+</html>
+

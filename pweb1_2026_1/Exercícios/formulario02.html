@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action_page.html">
+        <fieldset>
+            <legend>Sistema de Gestão Acadêmica</legend>
+            <h2>Manutenção de Usuários do Sistema Interno</h2>
+            
+            <label for="login">Login:</label><br>
+            <input type="text" id="login" name="login"><br>
+            <label for="senha">Senha:</label><br>
+            <input type="text" id="senha" name="senha">
+
+             <label for="status"><h2>Status</h2></label>
+             <select name="status" id="status">
+                <option value="ativo">Ativo</option>
+                <option value="inativo">Inativo</option>
+            </select>
+            <br>
+            <h2>Tipo:</h2>
+            <input type="radio" id="tecnico" name="tipo" value="tecnico">
+            <label for="tecnico">Técnico</label>
+            <input type="radio" id="professor" name="tipo" value="professor">
+            <label for="professor">Professor</label>
+            <input type="radio" id="aluno" name="tipo" value="aluno">
+            <label for="aluno">Aluno</label>
+            <br>
+
+            <label for="dataCriacao"><h2>Data criação:</h2></label>
+            <input type="date" id="dataCriacao" name="dataCriacao">
+
+             <h2>Perfil:</h2>
+            <input type="radio" id="convidado" name="perfil" value="convidado">
+            <label for="convidado">Convidado</label>
+            <input type="radio" id="administrador" name="perfil" value="administrador">
+            <label for="administrador">Administrador</label>
+            <br>
+
+            <label for="obs"><h2>Observações</h2></label>
+            <textarea id="obs" name="obs" rows="4" cols="50"></textarea>
+            
+            <br>
+            <input type="checkbox" id="mod1" name="mod1" value="compras">
+            <label for="mod1"> Compras</label>
+            <input type="checkbox" id="mod2" name="mod2" value="biblioteca">
+            <label for="mod2"> Biblioteca</label>
+            <input type="checkbox" id="mod3" name="mod3" value="academico">
+            <label for="mod3">Acadêmico</label>
+            <br>
+            <input type="checkbox" id="mod4" name="mod4" value="documentacao">
+            <label for="mod4">Documentação</label>
+            <input type="checkbox" id="mod5" name="mod5" value="recursosHumanos">
+            <label for="mod3">Recursos Humanos</label>
+            <br>
+            <br>
+
+            <input type="submit" value="Salvar">
+            <input type="submit" value="Excluir">
+        </fieldset>
+    </form>
+</body>
+</html>
