@@ -1,48 +1,283 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Bio links</title>
-</head>
-<body>
-    <header class="cssheader">
-        <h1>Bio links</h1>
-    </header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZEISS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="menu.js"></script>
+  </head>
+  <body>
+    <!--Header-->
+    <div class="row">
+      <div class="col-xs-6 col-md-4">
+         <header>
+          <img 
+          src="logo.png" 
+          width="80"
+          height="80"
+          alt="">
+        </header>
+      </div>
 
-    <nav class="nav"> 
-        <h2><a href="https://pt.wikipedia.org/wiki/Plantae" >Plantae</a></h2>
+ <!--Menu de navegação NAV -->
+    
+      <div class="col-xs-12 col-sm-6 col-md-8">
+        <ul class="nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="indext.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paginas/sobre.html">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paginas/produtos.html">Nossos Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="paginas/contato.html">Contato</a>
+          </li>
+        </ul>
+      </div>
 
-        <h2><a href="https://pt.wikipedia.org/wiki/Animalia">Animalia</a> </h2>
-
-        <h2><a href="https://pt.wikipedia.org/wiki/Fungi" >Fungi</a></h2>
-    </nav>
-
+    </div>
     <main>
-        <aside class="conteudo1"> 
-            <h2> Imagem </h2>
-            <img src="lavanda-beneficios-saude.webp" width="300" height="300">
-            <h3>Lavanda (gen. lavandula)</h3>
-        </aside>
-        <div class="centro">
-            <h2> Vídeo </h2>
-            <video src="198924-909251447_small.mp4" width="=300" height="300" controls >
-            <h3>Nome da espécie </h3>
+      <article>
+        <div class="row">
+        
+         <div class="col-xs-12 col-sm-6 col-md-7">
+           <!--Sessions -->
+        <section>
+          <h1>Zeiss Vision Center</h1>
+        <p class="lead">Tecnologia, precisão e excelência em cuidado com a visão</p>
+          <p>
+            O Zeiss Vision Center Chapecó é uma referência nacional em tecnologia óptica e cuidado com a visão, sendo reconhecido como o 
+            primeiro centro da ZEISS no Brasil. Destacando-se por proporcionar soluções visuais avançadas, tem 
+            consolidado a representatividade de uma das principais marcas do ramo óptico mundial no mercado brasileiro.
+          </p>
+        </section>
+        <!-- bootstrapde imagem passando -->
+         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="../site_ZEISS/imagens/WhatsApp Image 2026-03-29 at 20.49.03 (1).jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="../site_ZEISS/imagens/WhatsApp Image 2026-03-29 at 20.49.04 (1).jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../site_ZEISS/imagens/WhatsApp Image 2026-03-29 at 20.49.03.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/WhatsApp Image 2026-03-29 at 20.49.04 (2).jpeg" class="d-block w-100">
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <section>
+          <h1>O que é o ZEISS?</h1>
+          <p>
+            A Zeiss é uma empresa de desenvolvimento de equipamentos e sistemas ópticos. Fundada por Carl Zeiss no ano de 1846, em Jena, na Alemanha,
+            iniciou suas atividades como uma pequena fabricante e vendedora de microscópios. Posteriormente, o físico Ernest Abbe e o químico Otto 
+            Schott juntaram-se à Zeiss e elevaram ainda mais a eficiência das lentes produzidas pela empresa, estabelecendo novos padrões
+            mundiais de tecnologia e inovação e colocando a Zeiss na vanguarda da tecnologia óptica.  
+          </p>
+          <p>
+            Atualmente, a ZEISS é reconhecida mundialmente como líder em tecnologia óptica e optoeletrônica. Responsável por diversas inovações
+            em design e engenharia em seus campos de atuação ao longo da história, destaca-se seu pelo foco na precisão e excelência de seus produtos.
+          </p>
+          <figure>
+            <img src="../site_ZEISS/imagens/projetor-do-planetário-de-zeiss-mark-iv-68289383.webp" class="img-fluid destaque" alt="">
+            <figcaption>Carl Zeiss, fundador da Zeiss company</figcaption>
+          </figure>
+          <figure>
+            <img src="../site_ZEISS/imagens/labtelescopio.jpg" class="img-fluid destaque" alt="">
+            <figcaption>Telescópio 0,6 m Zeiss   Laboratório Nacional de Astrofísica</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h1>ZEISS e a Exploração Espacial</h1>
+          <p>
+            A excelência da ZEISS também ultrapassou os limites da Terra. Durante a missão Apollo 11, em 1969, que marcou a chegada do homem à Lua, 
+            equipamentos ópticos de altíssima precisão foram fundamentais para registrar esse momento histórico. As lentes utilizadas nas câmeras 
+            desenvolvidas em parceria com a NASA contavam com tecnologia avançada, alinhada aos rigorosos padrões de qualidade que consagraram a 
+            ZEISS mundialmente.
+          </p>
+          <figure>
+            <img src="../site_ZEISS/imagens/lua.jpg" class="img-fluid destaque" alt="">
+            <figcaption>Nesse contexto, lentes de câmera Zeiss foram desenvolvidas para uso no espaço</figcaption>
+          </figure>
+          <p>
+            Esse marco reforça o compromisso da empresa com a inovação e a precisão, demonstrando como sua expertise em óptica contribuiu 
+            para uma das maiores conquistas da humanidade.
+          </p>
+        </section>
+
+        
+       </div>
+
+
+        <div class="col-xs-6 col-md-5">
+          <!--Aside-->
+          <aside class="bg-light p-3 rounded shadow">
+             <h1>Áreas de Atuação da ZEISS Company</h1>
+          <p>
+            Desde o final do século XIX, impulsionada pelas descobertas de Ernst Abbe, a ZEISS expandiu sua atuação para diversos campos da óptica e da tecnologia de precisão. Ao longo das décadas, a empresa consolidou sua presença global, desenvolvendo soluções inovadoras que impactam diferentes setores da ciência, da indústria e do cotidiano.
+          </p>
+          <div class="row g-4">
+
+            <div class="col-md-6">
+              <div class="card h-100">
+                <img src="imagens/planetario.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Planetários</h5>
+                  <p class="card-text">Sistemas de projeção científica.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card h-100">
+                <img src="imagens/camera.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Lentes para câmeras</h5>
+                  <p class="card-text">Tecnologia para fotografia e cinema.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- próxima linha -->
+
+            <div class="col-md-6">
+              <div class="card h-100">
+                <img src="imagens/microscopio.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Microscopia</h5>
+                  <p class="card-text">Pesquisa científica e médica.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card h-100">
+                <img src="imagens/metrologia.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Metrologia</h5>
+                  <p class="card-text">Controle de qualidade industrial.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+           <p>
+            Essa diversidade de áreas demonstra o compromisso da ZEISS com a inovação contínua, a precisão e a excelência tecnológica, 
+            posicionando a empresa como referência mundial em óptica e optoeletrônica.
+          </p>
+
+          <br>
+
+          <h1>Missão, Visão e Valores</h1>
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Missão
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Criar Soluções Visuais:</strong> Desenvolver lentes e instrumentos de alta tecnologia que proporcionem a melhor experiência visual individualizada.
+                  <br>
+                  <strong>Avançar na Ciência:</strong> Revolucionar a indústria da ótica com pesquisa fundamental e aplicações industriais.
+                  <br>
+                  <strong>Melhorar a Vida:</strong> Melhorar a qualidade de vida dos pacientes e promover o acesso à saúde
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Visão
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <strong>Liderança e Inovação:</strong> Ser a referência em soluções de alta tecnologia que moldam mercados, com foco em software e métodos ágeis.
+                <br>
+                <strong>Parceria de Sucesso:</strong> Construir parcerias de longo prazo, baseando o desenvolvimento de produtos nas necessidades reais dos clientes.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Valores
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <strong>Sustentabilidade:</strong> Compromisso com a redução de emissões (meta de neutralidade até 2024/25) e utilização de energia verde.
+                <br>
+                <strong>Inovação e Curiosidade:</strong> Foco em superar convenções e oferecer produtos de alta tecnologia (ex: ZEISS DriveSafe, i.Profilerplus).
+                <br>
+                <strong>Qualidade e Personalização:</strong> Reconhecer que "ninguém vê como você", focando em soluções personalizadas e conforto visual ideal.  
+                </div>
+              </div>
+            </div>
+          </div>
+          </aside>
         </div>
-        <aside class="conteudo2">
-            <h2> Imagem </h2>
-            <img src="hortensias.webp" width="300" height="300">   
-            <h3>Hortênsia (Hydrangea macrophylla)</h3>  
-            </aside> 
-
+       </div>
+      </article>  
     </main>
+   
+    
+    <!--Footer -->
+     <footer class="bg-dark text-light mt-5">
+  <div class="container py-4">
+    <div class="row">
 
-    <footer class="cssheader">
-        <h3>Beijo!</h3>
-        <audio src="somdefloresta.mp3" controls></audio>
-    </footer>
-</body>
-</html>
+      <!-- Trabalhe Conosco -->
+      <div class="col-md-4">
+        <h5>Trabalhe Conosco</h5>
+        <p>Faça parte da nossa equipe e cresça com a gente.</p>
+        <a href="#" class="btn btn-outline-light btn-sm">Enviar currículo</a>
+      </div>
 
->
+      <!-- Instagram -->
+      <div class="col-md-4 text-center">
+        <h5>Instagram</h5>
+        <p>Acompanhe nossas novidades</p>
+        <a href="#" class="text-light">📸 @zeisschapeco</a>
+      </div>
+
+      <!-- Contato -->
+      <div class="col-md-4">
+        <h5>Contato</h5>
+        <p>Email: contato@zeisschapeco.com</p>
+        <p>Telefone: (49) 99999-9999</p>
+        <p>Chapecó - SC</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Linha final -->
+  <div class="bg-secondary text-center py-2">
+    <small>© 2026 Zeiss Vision Center Chapecó - Todos os direitos reservados</small>
+  </div>
+</footer>
+
+    
+  </body>
+  </html>
