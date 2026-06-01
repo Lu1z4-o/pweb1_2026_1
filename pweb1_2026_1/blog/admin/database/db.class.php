@@ -1,6 +1,7 @@
 <?php
 
-class db {
+class db
+{
 
     private $host     = 'localhost';
     private $user     = 'root';
@@ -31,36 +32,111 @@ class db {
         } catch (PDOException $e) {
             die('Erro na conexão: ' . $e->getMessage());
         }
-
     }
+    // Função que analisa os dados e retorna em formato de classe 
+    // Seleciona todos os dados da tabela 
+    public function all(){
+        $sql = "SELECT * FROM $this->table_name"; 
+        $st = $this->conn->prepare($sql);
+        $st->execute();
+        
+        return $st->fetchAll(PDO::FETCH_CLASS); 
+    }
+
+
+
     // INSERT INTO tabela` (`campo 1`, `campo 2`) VALUES ('?', '?');
     // Criação de método que recebe dados do formulário e executa comando de insert
 
-    public function store($dados){
-        $campos= "";
-        $marcadores="";
-        $vetorData= [];
-        $sep= "";
+    public function store($dados)
+    {
+        $campos = "";
+        $marcadores = "";
+        $vetorData = [];
+        $sep = "";
 
         // Criação de concatenação que preenche com os dados necessários
 
-        foreach ($dados as $campo => $valor){
-            $campos .= $sep.$campo; 
-            $marcadores .= $sep. "?";
-            $vetorData[]= $valor;
-            $sep=",";
+        foreach ($dados as $campo => $valor) {
+            $campos .= $sep . $campo;
+            $marcadores .= $sep . "?";
+            $vetorData[] = $valor;
+            $sep = ",";
         }
         $sql = "INSERT INTO $this->table_name ($campos) VALUES ($marcadores);";
+      //  var_dump($sql, $dados);
+      //  exit;
 
-        try{
-        $st = $this->conn->prepare($sql); 
-        $st->execute(params: $vetorData);
-        }catch(PDOException $e){
-            var_dump( "Erro ao inserir", $e->getMessage());
+        try {
+            $st = $this->conn->prepare($sql);
+            $st->execute(params: $vetorData);
+        } catch (PDOException $e) {
+           throw new Exception("Erro ao inserir", $e->getMessage());
         }
-
-        
-
     }
 
+public function update($dados)
+    {
+        $campos = "";
+        $vetorData = [];
+        $sep = "";
+
+        foreach ($dados as $campo => $valor) {
+            if ($campo !== 'id'){
+            $campos .= $sep . " $campo = ?";
+            $vetorData[] = $valor;
+            $sep = ", ";
+            }
+        }
+        $vetorData[]= $dados['id'];
+        $sql = "UPDATE $this->table_name SET $campos WHERE id= ?;";
+
+        try {
+            $st = $this->conn->prepare($sql);
+            $st->execute(params: $vetorData);
+        } catch (PDOException $e) {
+           throw new Exception("Erro ao inserir", $e->getMessage());
+        }
+    }
+     public function destroy($id){
+        try{
+                $sql = "DELETE FROM $this->table_name WHERE id=?;"; 
+                $st = $this->conn->prepare($sql);
+                $st->execute([$id]);
+        
+        return $st->fetchAll(PDO::FETCH_CLASS); 
+
+        }catch(PDOException $e){
+            throw new Exception("Erro ao deletar: ". $e->getMessage());
+ 
+    }
+}
+
+// Select * from tabela where campo like 
+  public function search($dados){
+        $campo= $dados['tipo'];
+        $valor=$dados['valor'];
+
+        $sql = "SELECT * FROM $this->table_name WHERE $campo LIKE ?"; 
+        $st = $this->conn->prepare($sql);
+        $st->execute(["%$valor%"]); 
+        
+        return $st->fetchAll(PDO::FETCH_CLASS); 
+    }
+
+    public function find($id){
+        $sql = "SELECT * FROM $this->table_name WHERE id=?"; 
+        $st = $this->conn->prepare($sql);
+        $st->execute([$id]);
+        
+        return $st->fetchObject(); 
+    }
+
+        public function findBy($campo, $valor){
+        $sql = "SELECT * FROM $this->table_name WHERE $campo= ?"; 
+        $st = $this->conn->prepare($sql);
+        $st->execute([$valor]);
+        
+        return $st->fetchObject(); 
+    }
 }

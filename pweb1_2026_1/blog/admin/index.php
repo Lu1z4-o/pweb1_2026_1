@@ -3,13 +3,13 @@
 include_once './database/db.class.php';
 
 // Instanciar um objeto 
-$conn = new db("aluno");
+$conn = new db("usuario");
 
-$dados= [
-    'nome'=>"Luiza de Oliveira",
-    'telefone'=>"09909090",
-    'email'=>"oluiza441@gmail.com",
+$dados = [
+    'nome' => "Luiza de Oliveira",
+    'telefone' => "09909090",
+    'email' => "oluiza441@gmail.com",
 ];
 
 $conn->store($dados);
-echo"Inserido com sucesso!";
+echo "Inserido com sucesso!";
