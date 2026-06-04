@@ -1,7 +1,7 @@
 <?php
 include '../header.php';
 include '../autenticacao.php';
-include_once "../database/db.class.php";
+include_once "../db.class.php";
 // Inicializa a variável para evitar erros caso o POST seja acionado
 
 // Post para quando o formulário for submetido
@@ -62,7 +62,8 @@ if (!empty($_POST)) {
                 <th scope="col">Data de admissão</th>
                 <th scope="col">Data de demissão</th>
                 <th scope="col">Função</th>
-                <th scope="col">Salário</th>
+                <th scope="col">Salário</th> 
+                <th scope="col">Ações</th>
             </tr>
         </thead>
         <tbody>

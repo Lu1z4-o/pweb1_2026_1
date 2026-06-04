@@ -60,7 +60,7 @@ if (!empty($_POST)) {
     <?php showValidationError($errors) ?>
 
     <form action="ClienteForm.php" method="post">
-        <h3> Formulário de Clientes</h3>
+        <h3> Cadastro de Clientes</h3>
         <input type="hidden" name="id" value="<?php echo getFormValue($data, 'id');?>">
         <div class="row">
             <div class=" col-6">

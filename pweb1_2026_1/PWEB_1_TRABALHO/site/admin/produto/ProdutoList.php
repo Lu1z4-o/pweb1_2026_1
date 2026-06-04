@@ -1,5 +1,3 @@
-
-// para amanhã: passar as funções do database e revisar tabelas, login
 <?php
 include '../header.php';
 include '../autenticacao.php';

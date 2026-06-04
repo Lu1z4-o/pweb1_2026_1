@@ -1,6 +1,6 @@
 <?php
 include '../header.php';
-include_once "../database/db.class.php";
+include_once "../db.class.php";
 
 $db = new db('funcionario');
 $success = '';

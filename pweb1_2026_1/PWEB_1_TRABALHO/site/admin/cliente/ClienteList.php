@@ -66,6 +66,7 @@ if (!empty($_POST)) {
                 <th scope="col">Rua</th>
                 <th scope="col">Cidade</th>
                 <th scope="col">CEP</th>
+                <th scope="col">Ação</th>
             </tr>
         </thead>
         <tbody>

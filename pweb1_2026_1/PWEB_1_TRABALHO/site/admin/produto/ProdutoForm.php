@@ -44,7 +44,7 @@ if (empty($errors)) {
                 $sucess="Registro atualizado com sucesso!";
             }
             
-            redirect('./UsuarioList.php');
+            redirect('./ProdutoList.php');
         }
     } catch (PDOException $e) {
         $actionError = $e->getMessage();
@@ -58,7 +58,7 @@ if (empty($errors)) {
     <?php showValidationError($errors) ?>
 
     <form action="ProdutoForm.php" method="post">
-        <h3> Formulário Usuário</h3>
+        <h3> Cadastro de produtos</h3>
         <input type="hidden" name="id" value="<?php echo getFormValue($data, 'id');?>">
         <div class="row">
             <div class=" col-6">
@@ -86,7 +86,7 @@ if (empty($errors)) {
             </div>
             <div class="mt-2">
                 <button type="submit" class="btn btn-success">Salvar</button>
-                <a href="./UsuarioList.php" class="btn btn-primary">Voltar</a>
+                <a href="./ProdutoList.php" class="btn btn-primary">Voltar</a>
             </div>
         </div>
     </form>
